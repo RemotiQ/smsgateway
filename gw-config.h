@@ -232,7 +232,7 @@
 /* #undef LIBSDB_VERSION */
 
 /* Define if you have and want to use the PostgreSQL dlr routines (-lpq) */
-#define HAVE_PGSQL 1
+/* #undef HAVE_PGSQL */
 
 /* Define if you want to have cookie support for the WSP */
 #define ENABLE_COOKIES 1

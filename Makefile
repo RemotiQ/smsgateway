@@ -75,8 +75,8 @@ CONFIG_CLEAN_FILES =
 LIBOBJS=
 LIBSRCS=$(LIBOBJS:.o=.c)
 
-LIBS=-lpq -lrt -lresolv -lm  -lpthread -lxml2 -L/usr/lib/x86_64-linux-gnu 
-CFLAGS=-D_REENTRANT=1 -I. -Igw -fcommon -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -D_LARGE_FILES= -I/usr/include/libxml2 -I/usr/include/postgresql
+LIBS=-lrt -lresolv -lm  -lpthread -lxml2 
+CFLAGS=-D_REENTRANT=1 -I. -Igw -g -O2 -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -D_LARGE_FILES= -I/usr/include/libxml2
 LDFLAGS= -rdynamic
 
 MKDEPEND=$(CC) $(CFLAGS) -MM
@@ -100,7 +100,7 @@ suffix = $(SUFFIX)
 # compiling and installing the software.
 #
 
-STARTSTOPDAEMONSRC=utils/start-stop-daemon.c
+STARTSTOPDAEMONSRC=
 
 binsrcs = \
 	wmlscript/wmlsc.c \
@@ -376,7 +376,7 @@ pkg: all
 	echo Package is now in solaris directory
 
 gw-config: utils/foobar-config.sh Makefile
-	./utils/foobar-config.sh "-I$(includedir)/kannel -fcommon -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -D_LARGE_FILES= -I/usr/include/libxml2 -I/usr/include/postgresql" \
+	./utils/foobar-config.sh "-I$(includedir)/kannel -g -O2 -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -D_LARGE_FILES= -I/usr/include/libxml2" \
 		"-L$(libdir)/kannel -lgw -lwap -lgwlib $(LIBS)" \
 		"svn-r" > gw-config
 	chmod 0755 gw-config
