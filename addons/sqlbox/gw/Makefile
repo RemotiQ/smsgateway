@@ -104,7 +104,7 @@ AUTOMAKE = ${SHELL} /home/ubuntu/websmsc/smsgateway/gateway-1.5.0rc/addons/sqlbo
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2 -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -I/usr/local/include/kannel -fcommon -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -D_LARGE_FILES= -I/usr/include/libxml2 -I/usr/include/postgresql
+CFLAGS = -fcommon -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -I/usr/local/include/kannel -fcommon -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -D_LARGE_FILES= -I/usr/include/libxml2 -I/usr/include/postgresql
 CONVERT = no
 CPP = gcc -E
 CPPFLAGS = 

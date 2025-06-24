@@ -161,7 +161,7 @@ lock_old_archive_extraction=no
 LTCC="gcc"
 
 # LTCC compiler flags.
-LTCFLAGS="-g -O2 -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -I/usr/local/include/kannel -fcommon -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -D_LARGE_FILES= -I/usr/include/libxml2 -I/usr/include/postgresql"
+LTCFLAGS="-fcommon -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -I/usr/local/include/kannel -fcommon -D_XOPEN_SOURCE=600 -D_BSD_SOURCE -D_LARGE_FILES= -I/usr/include/libxml2 -I/usr/include/postgresql"
 
 # Take the output of nm and produce a listing of raw symbols and C names.
 global_symbol_pipe="sed -n -e 's/^.*[	 ]\\([ABCDGIRSTW][ABCDGIRSTW]*\\)[	 ][	 ]*\\([_A-Za-z][_A-Za-z0-9]*\\)\$/\\1 \\2 \\2/p' | sed '/ __gnu_lto/d'"

@@ -18,8 +18,6 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/unistd-decl.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
@@ -56,11 +54,8 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h \
- /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
- /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
- /usr/local/include/kannel/gwlib/gwlib.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/strings.h /usr/local/include/kannel/gwlib/gwlib.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
@@ -74,18 +69,13 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
- /usr/include/x86_64-linux-gnu/bits/select2.h \
- /usr/include/x86_64-linux-gnu/bits/select-decl.h /usr/include/alloca.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/local/include/kannel/gw-config.h \
  /usr/local/include/kannel/gwlib/gw-getopt.h /usr/include/getopt.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_ext.h \
  /usr/local/include/kannel/gwlib/gwpoll.h \
  /usr/include/x86_64-linux-gnu/sys/poll.h \
  /usr/include/x86_64-linux-gnu/bits/poll.h \
- /usr/include/x86_64-linux-gnu/bits/poll2.h \
  /usr/local/include/kannel/gwlib/utils.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -96,9 +86,6 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2-decl.h \
- /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h \
  /usr/local/include/kannel/gwlib/octstr.h \
  /usr/local/include/kannel/gwlib/list.h /usr/include/termios.h \
  /usr/include/x86_64-linux-gnu/bits/termios.h \
@@ -144,7 +131,6 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
- /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h \
  /usr/local/include/kannel/gwlib/cfg.h \
  /usr/local/include/kannel/gwlib/date.h \
@@ -241,8 +227,6 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-/usr/include/x86_64-linux-gnu/bits/unistd.h:
-/usr/include/x86_64-linux-gnu/bits/unistd-decl.h:
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 /usr/include/signal.h:
 /usr/include/x86_64-linux-gnu/bits/signum-generic.h:
@@ -282,8 +266,6 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 /usr/include/strings.h:
-/usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
-/usr/include/x86_64-linux-gnu/bits/string_fortified.h:
 /usr/local/include/kannel/gwlib/gwlib.h:
 /usr/include/stdlib.h:
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
@@ -301,12 +283,8 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
 /usr/include/x86_64-linux-gnu/sys/select.h:
 /usr/include/x86_64-linux-gnu/bits/select.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-/usr/include/x86_64-linux-gnu/bits/select2.h:
-/usr/include/x86_64-linux-gnu/bits/select-decl.h:
 /usr/include/alloca.h:
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 /usr/local/include/kannel/gw-config.h:
 /usr/local/include/kannel/gwlib/gw-getopt.h:
 /usr/include/getopt.h:
@@ -314,7 +292,6 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
 /usr/local/include/kannel/gwlib/gwpoll.h:
 /usr/include/x86_64-linux-gnu/sys/poll.h:
 /usr/include/x86_64-linux-gnu/bits/poll.h:
-/usr/include/x86_64-linux-gnu/bits/poll2.h:
 /usr/local/include/kannel/gwlib/utils.h:
 /usr/include/stdio.h:
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
@@ -326,9 +303,6 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
-/usr/include/x86_64-linux-gnu/bits/stdio2-decl.h:
-/usr/include/x86_64-linux-gnu/bits/stdio.h:
-/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 /usr/local/include/kannel/gwlib/octstr.h:
 /usr/local/include/kannel/gwlib/list.h:
 /usr/include/termios.h:
@@ -380,7 +354,6 @@ sqlbox.o: sqlbox.c /usr/include/stdc-predef.h /usr/include/errno.h \
 /usr/include/x86_64-linux-gnu/asm/sockios.h:
 /usr/include/asm-generic/sockios.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h:
-/usr/include/x86_64-linux-gnu/bits/socket2.h:
 /usr/include/x86_64-linux-gnu/bits/in.h:
 /usr/local/include/kannel/gwlib/cfg.h:
 /usr/local/include/kannel/gwlib/date.h:

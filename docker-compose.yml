@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  smsgateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: smsgateway
+    ports:
+      - "13000:13000"  # smsbox
+      - "14000:14000"  # bearerbox
+      - "14001:14001"  # admin/monitor port if applicable
+    volumes:
+      - ./data:/var/log/smsgateway  # optional: to persist logs or config
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
