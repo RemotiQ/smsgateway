@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+.depend
 
 # Object files
 *.o
@@ -84,4 +85,5 @@ dkms.conf
 config.nice
 config.status
 *.log
-.*~
+*~
+*.cache
